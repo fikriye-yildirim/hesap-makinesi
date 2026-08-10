@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(to right, #f8f5f8, #fceef8);
+    font-family: 'Poppins' , sans-serif;
+}
+.hesap-makinesi{
+    width: 330px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.ekran {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    text-align: right;
+    font-size: 32px;
+    color: #333;
+}
+.butonlar{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.butonlar button{
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 12px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.butonlar button:hover{
+    background-color: #5648d8;
+    transform: translateY(-3px);
+}
+body::before{
+    content: "";
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+    opacity: 0.08;
+    top: 40px;
+    left: 60px;
+}
+body::after{
+    content: "";
+    position: fixed;
+    width: 180px;
+    height: 180px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+    opacity: 0.06;
+    bottom: 50px;
+    right: 80px;
+}
+/* İŞLEM GEÇMİŞİ*/
+.gecmis{
+    width: 330px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.gecmis h3{
+    color: #6c63ff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#gecmis-listesi {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+#gecmis-listesi p {
+    font-size: 18px;
+    color: #555;
+    background-color: #f8f5ff;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: translateX(4px);
+}
+#gecmis-listesi p:hover{
+    background-color: #ece9ff;
+    transform: translateX(4px);
+}
+.gecmis button{
+    background-color: #ff7b9c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s
+}
+.gecmis button:hover{
+    background-color: #e85f82;
+    transform: translateY(-3px);
+}
+.hesap-alani {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.temizle {
+    grid-column: 1 / -1;
+    width: 100% !important;
+}

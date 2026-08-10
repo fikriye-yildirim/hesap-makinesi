@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hesap-alani">
+    <div class="hesap-makinesi">
+        <div class="ekran" >
+            0
+        </div>
+        <div class="butonlar">
+            <button onclick="sayiEkle('7')">7</button>
+            <button onclick="sayiEkle('8')">8</button>
+            <button onclick="sayiEkle('9')">9</button> 
+            <button onclick="islemSec('/')">/</button>
+
+            <button onclick="sayiEkle('4')">4</button>
+            <button onclick="sayiEkle('5')">5</button>
+            <button onclick="sayiEkle('6')">6</button>
+            <button onclick="islemSec('*')">*</button>
+
+            <button onclick="sayiEkle('1')">1</button>
+            <button onclick="sayiEkle('2')">2</button>
+            <button onclick="sayiEkle('3')">3</button>
+            <button onclick="islemSec('-')">-</button>
+
+            <button onclick="sayiEkle('0')">0</button>
+            <button onclick="sayiEkle('.')">.</button>
+            <button onclick="hesapla()">=</button>
+            <button onclick="islemSec('+')">+</button>
+            <button onclick="temizle()">C</button>
+        </div>
+    </div>
+    <!-- İŞLEM GEÇMİŞİ -->
+     <div class="gecmis">
+        <h3>İşlem Geçmişi</h3>
+        <div id="gecmis-listesi"></div>
+        <button onclick="gecmisiTemizle()">
+            Geçmişi Temizle
+        </button>
+     </div>
+    </div>
+     <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
